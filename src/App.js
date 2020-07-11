@@ -12,19 +12,19 @@ function App() {
 
       <div className="flex-1 page-container-super">
         <div>
-          <h2 style={{ "margin-top": 0 }}>Input</h2>
-          <label className="block" for="note">
+          <h2 style={{ marginTop: 0 }}>Input</h2>
+          <label className="block" htmlFor="note">
             Type/Paste text here
           </label>
         </div>
 
         <div className="flex-1 page-container">
           <div className="page-a margined lines">
-            <div contenteditable="true" className="top-margin"></div>
+            <div contentEditable="true" className="top-margin"></div>
             <div className="display-flex left-margin-and-content">
-              <div contenteditable="true" className="left-margin"></div>
-              <div className="paper-content" id="note" contenteditable="true">
-                Write the text you want convert to a hand-written text here
+              <div contentEditable="true" className="left-margin"></div>
+              <div className="paper-content" id="note" contentEditable="true">
+                Write the text you want to convert to a hand-written text here
               </div>
             </div>
             <div className="overlay"></div>
@@ -36,7 +36,7 @@ function App() {
           <button
             id="draw-diagram-button"
             type="button"
-            style={{ "font-size": 15, "margin-top": 5 }}
+            style={{ fontSize: 15, marginTop: 5 }}
             className="draw-button"
           >
             Draw <small>(Beta)</small>
@@ -46,10 +46,10 @@ function App() {
 
       <section>
         <h2 id="output-header">Output</h2>
-        <div id="output" class="output" style={{ "text-align": "center" }}>
+        <div id="output" className="output" style={{ textAlign: "center" }}>
           Click "Generate Image" Button to generate new image.
         </div>
-        <div style={{ "text-align": "center", padding: 30 }}>
+        <div style={{ textAlign: "center", padding: 30 }}>
           <button className="imp-button" id="download-as-pdf-button">
             Download All Images as PDF
           </button>
@@ -85,7 +85,7 @@ function App() {
 
       {/* GitHub Corner logo */}
       <a
-        tabindex="0"
+        tabIndex="0"
         href="https://github.com/afarag033/handwriting-generator"
         rel="noopener noreferrer"
         target="_blank"
@@ -110,7 +110,7 @@ function App() {
           <path
             d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
             fill="currentColor"
-            style={{ "transform-origin": 130 }}
+            style={{ transformOrigin: 130 }}
             className="octo-arm"
           ></path>
           <path

@@ -7,14 +7,11 @@ class Customization extends Component {
       <div className="customization">
         <div
           style={{
-            "padding-right": 10,
-            "padding-up": 0,
-            "padding-left": 10,
-            "padding-bottom": 0,
+            padding: "10 0 10 0",
           }}
         >
           <b>Customizations</b> <small>(Optional)</small>
-          <p style={{ "font-size": 10 }}>
+          <p style={{ fontSize: 10 }}>
             <em>
               Note: Few changes may reflect only in the generated image and not
               in the preview
@@ -25,26 +22,25 @@ class Customization extends Component {
         <fieldset>
           <legend>Handwriting Options</legend>
           <div>
-            <label className="block" for="handwriting-font">
+            <label className="block" htmlFor="handwriting-font">
               Handwriting Font
             </label>
             <select>
               <option
                 id="handwriting-font"
-                style={{ "font-family": "Homemade Apple" }}
-                selected={true}
+                style={{ fontFamily: "Homemade Apple" }}
               >
                 Homemade Apple
               </option>
-              <option style={{ "font-family": "Caveat" }}>Caveat</option>
-              <option>Arabic</option>
+              <option style={{ fontFamily: "Caveat" }}>Caveat</option>
+              <option selected={true}>Arabic</option>
             </select>
           </div>
           <div className="upload-handwriting-container">
-            <label className="block" for="font-file">
+            <label className="block" htmlFor="font-file">
               Upload your handwriting font <small>(Beta)</small>&nbsp;
               <a
-                style={{ "font-size": 1.1 }}
+                style={{ fontSize: 1.1 }}
                 title="How to add your own handwriting"
                 href="#how-to-add-handwriting"
               >
@@ -60,7 +56,7 @@ class Customization extends Component {
 
           <div className="category-grid">
             <div className="postfix-input" data-postfix="pt">
-              <label for="font-size">Font Size</label>
+              <label htmlFor="font-size">Font Size</label>
               <input
                 id="font-size"
                 min="0"
@@ -70,7 +66,7 @@ class Customization extends Component {
               />
             </div>
             <div>
-              <label className="block" for="ink-color">
+              <label className="block" htmlFor="ink-color">
                 Ink Color
               </label>
               <select id="ink-color">
@@ -82,7 +78,7 @@ class Customization extends Component {
               </select>
             </div>
             <div>
-              <label className="block" for="page-size">
+              <label className="block" htmlFor="page-size">
                 Page Size
               </label>
               <select id="page-size">
@@ -92,7 +88,7 @@ class Customization extends Component {
               </select>
             </div>
             <div>
-              <label className="block" for="page-effects">
+              <label className="block" htmlFor="page-effects">
                 Effects
               </label>
               <select id="page-effects">
@@ -111,15 +107,15 @@ class Customization extends Component {
 
           <div className="category-grid">
             <div className="postfix-input" data-postfix="px">
-              <label for="top-padding">Vertical Position</label>
+              <label htmlFor="top-padding">Vertical Position</label>
               <input id="top-padding" min="0" value="5" type="number" />
             </div>
             <div className="postfix-input" data-postfix="px">
-              <label for="word-spacing">Word Spacing</label>
+              <label htmlFor="word-spacing">Word Spacing</label>
               <input id="word-spacing" min="0" value="0" type="number" />
             </div>
             <div className="postfix-input" data-postfix="pt">
-              <label for="letter-spacing">Letter Spacing</label>
+              <label htmlFor="letter-spacing">Letter Spacing</label>
               <input id="letter-spacing" value="0" type="number" />
             </div>
           </div>
@@ -130,7 +126,7 @@ class Customization extends Component {
 
           <div className="category-grid">
             <div>
-              <label for="paper-margin-toggle">
+              <label htmlFor="paper-margin-toggle">
                 Paper Margin:
                 <span aria-label="paper margin status" className="status">
                   on
@@ -149,7 +145,7 @@ class Customization extends Component {
             </div>
 
             <div>
-              <label for="paper-line-toggle">
+              <label htmlFor="paper-line-toggle">
                 Paper Lines:
                 <span aria-label="paper line status" className="status">
                   on
@@ -167,7 +163,7 @@ class Customization extends Component {
               </label>
             </div>
             <div className="experimental">
-              <label for="paper-curve-toggle">
+              <label htmlFor="paper-curve-toggle">
                 Paper Curve:
                 <span aria-label="paper curve status" className="status">
                   off
@@ -190,12 +186,12 @@ class Customization extends Component {
           </div>
         </fieldset>
 
-        <hr style={{ border: 0.3, width: 80 }} />
-        <div style={{ "text-align": "center", padding: 30 }}>
+        <hr style={{ border: "0.3px", width: "80%" }} />
+        <div style={{ textAlign: "center", padding: "30px" }}>
           <button
             type="submit"
             data-testid="generate-image-button"
-            class="button generate-image-button"
+            className="button generate-image-button"
           >
             Generate Image
           </button>
